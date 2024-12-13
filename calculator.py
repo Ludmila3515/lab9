@@ -4,11 +4,17 @@ def add(x, y):
 def subtract(x, y):
     return x - y
 
+def multiply(x, y):
+    return x * y
+
+
 
 
 print("Выберите операцию:")
 print("1. Сложение")
 print("2. Вычитание")
+print("3. Умножение")
+
 
 while True:
     choice = input("Введите номер операции (1/2/3/4): ")
@@ -21,6 +27,8 @@ while True:
             print(f"{num1} + {num2} = {add(num1, num2)}")
         elif choice == '2':
             print(f"{num1} - {num2} = {subtract(num1, num2)}")
+        elif choice == '3':
+            print(f"{num1} * {num2} = {multiply(num1, num2)}")
         
 
         # Спрашиваем пользователя, хочет ли он продолжить
